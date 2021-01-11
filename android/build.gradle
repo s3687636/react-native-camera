@@ -26,10 +26,8 @@ android {
   buildToolsVersion safeExtGet('buildToolsVersion', '28.0.3')
 
   defaultConfig {
-
-    multiDexEnabled true
-    minSdkVersion safeExtGet('minSdkVersion', 16)
-
+    // minSdkVersion safeExtGet('minSdkVersion', 16)
+     minSdkVersion safeExtGet('minSdkVersion', 19)
     targetSdkVersion safeExtGet('targetSdkVersion', 28)
   }
 

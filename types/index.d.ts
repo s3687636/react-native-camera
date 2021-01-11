@@ -248,8 +248,6 @@ export interface RNCameraProps {
   permissionDialogMessage?: string;
   /** Android only */
   playSoundOnCapture?: boolean;
-  /** Android only */
-  playSoundOnRecord?: boolean;
 
   androidCameraPermissionOptions?: {
     title: string;

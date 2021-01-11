@@ -149,11 +149,6 @@ public class CameraViewManager extends ViewGroupManager<RNCameraView> {
     view.setPlaySoundOnCapture(playSoundOnCapture);
   }
 
-  @ReactProp(name = "playSoundOnRecord")
-  public void setPlaySoundOnRecord(RNCameraView view, boolean playSoundOnRecord) {
-    view.setPlaySoundOnRecord(playSoundOnRecord);
-  }
-
   @ReactProp(name = "barCodeTypes")
   public void setBarCodeTypes(RNCameraView view, ReadableArray barCodeTypes) {
     if (barCodeTypes == null) {
@@ -213,7 +208,7 @@ public class CameraViewManager extends ViewGroupManager<RNCameraView> {
   }
 
   @ReactProp(name = "onFacesVerified")
-  public void setFaceVerifier(RNCameraView view, Boolean onFaceVerifyEnabled) {
+  public void setFaceVerifier(RNCameraView view, boolean onFaceVerifyEnabled) {
     Log.i("Debug",
             "CameraviewManager onFaceVerified enable ="+
                     onFaceVerifyEnabled.toString());
